@@ -1,0 +1,2000 @@
+[
+    {
+        "vnfId": 1,
+        "vnfType": "Encryption",
+        "sfcList": [
+            {
+                "sfcId": 1,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 3,
+                "requiredVNF": [
+                    "Encryption",
+                    "Proxy",
+                    "DPI"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 3,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 40,
+            "usedMemResource": 40
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 2,
+        "vnfType": "Proxy",
+        "sfcList": [
+            {
+                "sfcId": 1,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 3,
+                "requiredVNF": [
+                    "Encryption",
+                    "Proxy",
+                    "DPI"
+                ]
+            },
+            {
+                "sfcId": 15,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 14,
+                "requiredVNF": [
+                    "Proxy",
+                    "Gateway",
+                    "VPN"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 18,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 190,
+            "usedMemResource": 190
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 70,
+        "memConsumed": 70,
+        "providedCpuResource": 70,
+        "providedMemResource": 70
+    },
+    {
+        "vnfId": 3,
+        "vnfType": "DPI",
+        "sfcList": [
+            {
+                "sfcId": 1,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 3,
+                "requiredVNF": [
+                    "Encryption",
+                    "Proxy",
+                    "DPI"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 6,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 150,
+            "usedMemResource": 150
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 4,
+        "vnfType": "NAT",
+        "sfcList": [
+            {
+                "sfcId": 2,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 3,
+                "requiredVNF": [
+                    "NAT",
+                    "IDS",
+                    "VPN"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 6,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 150,
+            "usedMemResource": 150
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 5,
+        "vnfType": "IDS",
+        "sfcList": [
+            {
+                "sfcId": 2,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 3,
+                "requiredVNF": [
+                    "NAT",
+                    "IDS",
+                    "VPN"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 11,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 190,
+            "usedMemResource": 190
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 6,
+        "vnfType": "VPN",
+        "sfcList": [
+            {
+                "sfcId": 2,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 3,
+                "requiredVNF": [
+                    "NAT",
+                    "IDS",
+                    "VPN"
+                ]
+            },
+            {
+                "sfcId": 14,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 14,
+                "requiredVNF": [
+                    "Encryption",
+                    "Proxy",
+                    "VPN"
+                ]
+            },
+            {
+                "sfcId": 20,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 17,
+                "requiredVNF": [
+                    "NAT",
+                    "LB",
+                    "VPN"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 12,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 180,
+            "usedMemResource": 180
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 100,
+        "memConsumed": 100,
+        "providedCpuResource": 100,
+        "providedMemResource": 100
+    },
+    {
+        "vnfId": 7,
+        "vnfType": "Gateway",
+        "sfcList": [
+            {
+                "sfcId": 3,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 3,
+                "requiredVNF": [
+                    "Gateway",
+                    "FW",
+                    "NAT"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 5,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 200,
+            "usedMemResource": 200
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 8,
+        "vnfType": "FW",
+        "sfcList": [
+            {
+                "sfcId": 3,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 3,
+                "requiredVNF": [
+                    "Gateway",
+                    "FW",
+                    "NAT"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 1,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 80,
+            "usedMemResource": 80
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 9,
+        "vnfType": "NAT",
+        "sfcList": [
+            {
+                "sfcId": 3,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 3,
+                "requiredVNF": [
+                    "Gateway",
+                    "FW",
+                    "NAT"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 8,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 200,
+            "usedMemResource": 200
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 10,
+        "vnfType": "DPI",
+        "sfcList": [
+            {
+                "sfcId": 4,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 3,
+                "requiredVNF": [
+                    "DPI",
+                    "LB",
+                    "IDS"
+                ]
+            },
+            {
+                "sfcId": 18,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 17,
+                "requiredVNF": [
+                    "DPI",
+                    "LB",
+                    "Encryption"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 9,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 150,
+            "usedMemResource": 150
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 70,
+        "memConsumed": 70,
+        "providedCpuResource": 70,
+        "providedMemResource": 70
+    },
+    {
+        "vnfId": 11,
+        "vnfType": "LB",
+        "sfcList": [
+            {
+                "sfcId": 4,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 3,
+                "requiredVNF": [
+                    "DPI",
+                    "LB",
+                    "IDS"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 7,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 40,
+            "usedMemResource": 40
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 12,
+        "vnfType": "IDS",
+        "sfcList": [
+            {
+                "sfcId": 4,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 3,
+                "requiredVNF": [
+                    "DPI",
+                    "LB",
+                    "IDS"
+                ]
+            },
+            {
+                "sfcId": 8,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 8,
+                "requiredVNF": [
+                    "VPN",
+                    "Encryption",
+                    "IDS"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 6,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 150,
+            "usedMemResource": 150
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 70,
+        "memConsumed": 70,
+        "providedCpuResource": 70,
+        "providedMemResource": 70
+    },
+    {
+        "vnfId": 13,
+        "vnfType": "IDS",
+        "sfcList": [
+            {
+                "sfcId": 5,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 3,
+                "requiredVNF": [
+                    "IDS",
+                    "Proxy",
+                    "VPN"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 8,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 200,
+            "usedMemResource": 200
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 14,
+        "vnfType": "Proxy",
+        "sfcList": [
+            {
+                "sfcId": 5,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 3,
+                "requiredVNF": [
+                    "IDS",
+                    "Proxy",
+                    "VPN"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 15,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 190,
+            "usedMemResource": 190
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 15,
+        "vnfType": "VPN",
+        "sfcList": [
+            {
+                "sfcId": 5,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 3,
+                "requiredVNF": [
+                    "IDS",
+                    "Proxy",
+                    "VPN"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 8,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 200,
+            "usedMemResource": 200
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 16,
+        "vnfType": "NAT",
+        "sfcList": [
+            {
+                "sfcId": 6,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 8,
+                "requiredVNF": [
+                    "NAT",
+                    "Gateway",
+                    "DPI"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 9,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 150,
+            "usedMemResource": 150
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 17,
+        "vnfType": "Gateway",
+        "sfcList": [
+            {
+                "sfcId": 6,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 8,
+                "requiredVNF": [
+                    "NAT",
+                    "Gateway",
+                    "DPI"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 15,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 190,
+            "usedMemResource": 190
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 18,
+        "vnfType": "DPI",
+        "sfcList": [
+            {
+                "sfcId": 6,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 8,
+                "requiredVNF": [
+                    "NAT",
+                    "Gateway",
+                    "DPI"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 2,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 40,
+            "usedMemResource": 40
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 19,
+        "vnfType": "FW",
+        "sfcList": [
+            {
+                "sfcId": 7,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 8,
+                "requiredVNF": [
+                    "FW",
+                    "LB",
+                    "Proxy"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 15,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 190,
+            "usedMemResource": 190
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 20,
+        "vnfType": "LB",
+        "sfcList": [
+            {
+                "sfcId": 7,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 8,
+                "requiredVNF": [
+                    "FW",
+                    "LB",
+                    "Proxy"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 12,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 180,
+            "usedMemResource": 180
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 21,
+        "vnfType": "Proxy",
+        "sfcList": [
+            {
+                "sfcId": 7,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 8,
+                "requiredVNF": [
+                    "FW",
+                    "LB",
+                    "Proxy"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 14,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 190,
+            "usedMemResource": 190
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 22,
+        "vnfType": "VPN",
+        "sfcList": [
+            {
+                "sfcId": 8,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 8,
+                "requiredVNF": [
+                    "VPN",
+                    "Encryption",
+                    "IDS"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 9,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 150,
+            "usedMemResource": 150
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 23,
+        "vnfType": "Encryption",
+        "sfcList": [
+            {
+                "sfcId": 8,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 8,
+                "requiredVNF": [
+                    "VPN",
+                    "Encryption",
+                    "IDS"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 8,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 200,
+            "usedMemResource": 200
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 12,
+        "vnfType": "IDS",
+        "sfcList": [
+            {
+                "sfcId": 4,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 3,
+                "requiredVNF": [
+                    "DPI",
+                    "LB",
+                    "IDS"
+                ]
+            },
+            {
+                "sfcId": 8,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 8,
+                "requiredVNF": [
+                    "VPN",
+                    "Encryption",
+                    "IDS"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 6,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 150,
+            "usedMemResource": 150
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 70,
+        "memConsumed": 70,
+        "providedCpuResource": 70,
+        "providedMemResource": 70
+    },
+    {
+        "vnfId": 24,
+        "vnfType": "Proxy",
+        "sfcList": [
+            {
+                "sfcId": 9,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 8,
+                "requiredVNF": [
+                    "Proxy",
+                    "LB",
+                    "NAT"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 8,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 200,
+            "usedMemResource": 200
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 25,
+        "vnfType": "LB",
+        "sfcList": [
+            {
+                "sfcId": 9,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 8,
+                "requiredVNF": [
+                    "Proxy",
+                    "LB",
+                    "NAT"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 14,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 190,
+            "usedMemResource": 190
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 26,
+        "vnfType": "NAT",
+        "sfcList": [
+            {
+                "sfcId": 9,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 8,
+                "requiredVNF": [
+                    "Proxy",
+                    "LB",
+                    "NAT"
+                ]
+            },
+            {
+                "sfcId": 11,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 14,
+                "requiredVNF": [
+                    "NAT",
+                    "LB",
+                    "DPI"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 14,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 190,
+            "usedMemResource": 190
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 70,
+        "memConsumed": 70,
+        "providedCpuResource": 70,
+        "providedMemResource": 70
+    },
+    {
+        "vnfId": 27,
+        "vnfType": "IDS",
+        "sfcList": [
+            {
+                "sfcId": 10,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 8,
+                "requiredVNF": [
+                    "IDS",
+                    "Gateway",
+                    "Encryption"
+                ]
+            },
+            {
+                "sfcId": 12,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 14,
+                "requiredVNF": [
+                    "FW",
+                    "IDS",
+                    "Gateway"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 15,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 190,
+            "usedMemResource": 190
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 70,
+        "memConsumed": 70,
+        "providedCpuResource": 70,
+        "providedMemResource": 70
+    },
+    {
+        "vnfId": 28,
+        "vnfType": "Gateway",
+        "sfcList": [
+            {
+                "sfcId": 10,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 8,
+                "requiredVNF": [
+                    "IDS",
+                    "Gateway",
+                    "Encryption"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 14,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 190,
+            "usedMemResource": 190
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 29,
+        "vnfType": "Encryption",
+        "sfcList": [
+            {
+                "sfcId": 10,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 8,
+                "requiredVNF": [
+                    "IDS",
+                    "Gateway",
+                    "Encryption"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 18,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 190,
+            "usedMemResource": 190
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 26,
+        "vnfType": "NAT",
+        "sfcList": [
+            {
+                "sfcId": 9,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 8,
+                "requiredVNF": [
+                    "Proxy",
+                    "LB",
+                    "NAT"
+                ]
+            },
+            {
+                "sfcId": 11,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 14,
+                "requiredVNF": [
+                    "NAT",
+                    "LB",
+                    "DPI"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 14,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 190,
+            "usedMemResource": 190
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 70,
+        "memConsumed": 70,
+        "providedCpuResource": 70,
+        "providedMemResource": 70
+    },
+    {
+        "vnfId": 30,
+        "vnfType": "LB",
+        "sfcList": [
+            {
+                "sfcId": 11,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 14,
+                "requiredVNF": [
+                    "NAT",
+                    "LB",
+                    "DPI"
+                ]
+            },
+            {
+                "sfcId": 20,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 17,
+                "requiredVNF": [
+                    "NAT",
+                    "LB",
+                    "VPN"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 11,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 190,
+            "usedMemResource": 190
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 70,
+        "memConsumed": 70,
+        "providedCpuResource": 70,
+        "providedMemResource": 70
+    },
+    {
+        "vnfId": 31,
+        "vnfType": "DPI",
+        "sfcList": [
+            {
+                "sfcId": 11,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 14,
+                "requiredVNF": [
+                    "NAT",
+                    "LB",
+                    "DPI"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 5,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 200,
+            "usedMemResource": 200
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 32,
+        "vnfType": "FW",
+        "sfcList": [
+            {
+                "sfcId": 12,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 14,
+                "requiredVNF": [
+                    "FW",
+                    "IDS",
+                    "Gateway"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 13,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 40,
+            "usedMemResource": 40
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 27,
+        "vnfType": "IDS",
+        "sfcList": [
+            {
+                "sfcId": 10,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 8,
+                "requiredVNF": [
+                    "IDS",
+                    "Gateway",
+                    "Encryption"
+                ]
+            },
+            {
+                "sfcId": 12,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 14,
+                "requiredVNF": [
+                    "FW",
+                    "IDS",
+                    "Gateway"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 15,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 190,
+            "usedMemResource": 190
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 70,
+        "memConsumed": 70,
+        "providedCpuResource": 70,
+        "providedMemResource": 70
+    },
+    {
+        "vnfId": 33,
+        "vnfType": "Gateway",
+        "sfcList": [
+            {
+                "sfcId": 12,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 14,
+                "requiredVNF": [
+                    "FW",
+                    "IDS",
+                    "Gateway"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 16,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 120,
+            "usedMemResource": 120
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 34,
+        "vnfType": "DPI",
+        "sfcList": [
+            {
+                "sfcId": 13,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 14,
+                "requiredVNF": [
+                    "DPI",
+                    "Proxy",
+                    "NAT"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 17,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 80,
+            "usedMemResource": 80
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 35,
+        "vnfType": "Proxy",
+        "sfcList": [
+            {
+                "sfcId": 13,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 14,
+                "requiredVNF": [
+                    "DPI",
+                    "Proxy",
+                    "NAT"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 16,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 120,
+            "usedMemResource": 120
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 36,
+        "vnfType": "NAT",
+        "sfcList": [
+            {
+                "sfcId": 13,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 14,
+                "requiredVNF": [
+                    "DPI",
+                    "Proxy",
+                    "NAT"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 16,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 120,
+            "usedMemResource": 120
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 37,
+        "vnfType": "Encryption",
+        "sfcList": [
+            {
+                "sfcId": 14,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 14,
+                "requiredVNF": [
+                    "Encryption",
+                    "Proxy",
+                    "VPN"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 1,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 80,
+            "usedMemResource": 80
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 38,
+        "vnfType": "Proxy",
+        "sfcList": [
+            {
+                "sfcId": 14,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 14,
+                "requiredVNF": [
+                    "Encryption",
+                    "Proxy",
+                    "VPN"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 5,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 200,
+            "usedMemResource": 200
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 6,
+        "vnfType": "VPN",
+        "sfcList": [
+            {
+                "sfcId": 2,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 3,
+                "requiredVNF": [
+                    "NAT",
+                    "IDS",
+                    "VPN"
+                ]
+            },
+            {
+                "sfcId": 14,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 14,
+                "requiredVNF": [
+                    "Encryption",
+                    "Proxy",
+                    "VPN"
+                ]
+            },
+            {
+                "sfcId": 20,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 17,
+                "requiredVNF": [
+                    "NAT",
+                    "LB",
+                    "VPN"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 12,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 180,
+            "usedMemResource": 180
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 100,
+        "memConsumed": 100,
+        "providedCpuResource": 100,
+        "providedMemResource": 100
+    },
+    {
+        "vnfId": 2,
+        "vnfType": "Proxy",
+        "sfcList": [
+            {
+                "sfcId": 1,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 3,
+                "requiredVNF": [
+                    "Encryption",
+                    "Proxy",
+                    "DPI"
+                ]
+            },
+            {
+                "sfcId": 15,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 14,
+                "requiredVNF": [
+                    "Proxy",
+                    "Gateway",
+                    "VPN"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 18,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 190,
+            "usedMemResource": 190
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 70,
+        "memConsumed": 70,
+        "providedCpuResource": 70,
+        "providedMemResource": 70
+    },
+    {
+        "vnfId": 39,
+        "vnfType": "Gateway",
+        "sfcList": [
+            {
+                "sfcId": 15,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 14,
+                "requiredVNF": [
+                    "Proxy",
+                    "Gateway",
+                    "VPN"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 20,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 80,
+            "usedMemResource": 80
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 40,
+        "vnfType": "VPN",
+        "sfcList": [
+            {
+                "sfcId": 15,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 14,
+                "requiredVNF": [
+                    "Proxy",
+                    "Gateway",
+                    "VPN"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 20,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 80,
+            "usedMemResource": 80
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 41,
+        "vnfType": "Gateway",
+        "sfcList": [
+            {
+                "sfcId": 16,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 17,
+                "requiredVNF": [
+                    "Gateway",
+                    "Encryption",
+                    "IDS"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 11,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 190,
+            "usedMemResource": 190
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 42,
+        "vnfType": "Encryption",
+        "sfcList": [
+            {
+                "sfcId": 16,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 17,
+                "requiredVNF": [
+                    "Gateway",
+                    "Encryption",
+                    "IDS"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 11,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 190,
+            "usedMemResource": 190
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 43,
+        "vnfType": "IDS",
+        "sfcList": [
+            {
+                "sfcId": 16,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 17,
+                "requiredVNF": [
+                    "Gateway",
+                    "Encryption",
+                    "IDS"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 5,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 200,
+            "usedMemResource": 200
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 44,
+        "vnfType": "VPN",
+        "sfcList": [
+            {
+                "sfcId": 17,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 17,
+                "requiredVNF": [
+                    "VPN",
+                    "Gateway",
+                    "LB"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 18,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 190,
+            "usedMemResource": 190
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 45,
+        "vnfType": "Gateway",
+        "sfcList": [
+            {
+                "sfcId": 17,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 17,
+                "requiredVNF": [
+                    "VPN",
+                    "Gateway",
+                    "LB"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 18,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 190,
+            "usedMemResource": 190
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 46,
+        "vnfType": "LB",
+        "sfcList": [
+            {
+                "sfcId": 17,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 17,
+                "requiredVNF": [
+                    "VPN",
+                    "Gateway",
+                    "LB"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 5,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 200,
+            "usedMemResource": 200
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 10,
+        "vnfType": "DPI",
+        "sfcList": [
+            {
+                "sfcId": 4,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 3,
+                "requiredVNF": [
+                    "DPI",
+                    "LB",
+                    "IDS"
+                ]
+            },
+            {
+                "sfcId": 18,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 17,
+                "requiredVNF": [
+                    "DPI",
+                    "LB",
+                    "Encryption"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 9,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 150,
+            "usedMemResource": 150
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 70,
+        "memConsumed": 70,
+        "providedCpuResource": 70,
+        "providedMemResource": 70
+    },
+    {
+        "vnfId": 47,
+        "vnfType": "LB",
+        "sfcList": [
+            {
+                "sfcId": 18,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 17,
+                "requiredVNF": [
+                    "DPI",
+                    "LB",
+                    "Encryption"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 10,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 160,
+            "usedMemResource": 160
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 48,
+        "vnfType": "Encryption",
+        "sfcList": [
+            {
+                "sfcId": 18,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 17,
+                "requiredVNF": [
+                    "DPI",
+                    "LB",
+                    "Encryption"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 10,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 160,
+            "usedMemResource": 160
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 49,
+        "vnfType": "FW",
+        "sfcList": [
+            {
+                "sfcId": 19,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 17,
+                "requiredVNF": [
+                    "FW",
+                    "IDS",
+                    "Proxy"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 17,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 80,
+            "usedMemResource": 80
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 50,
+        "vnfType": "IDS",
+        "sfcList": [
+            {
+                "sfcId": 19,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 17,
+                "requiredVNF": [
+                    "FW",
+                    "IDS",
+                    "Proxy"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 10,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 160,
+            "usedMemResource": 160
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 51,
+        "vnfType": "Proxy",
+        "sfcList": [
+            {
+                "sfcId": 19,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 17,
+                "requiredVNF": [
+                    "FW",
+                    "IDS",
+                    "Proxy"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 10,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 160,
+            "usedMemResource": 160
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 52,
+        "vnfType": "NAT",
+        "sfcList": [
+            {
+                "sfcId": 20,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 17,
+                "requiredVNF": [
+                    "NAT",
+                    "LB",
+                    "VPN"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 12,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 180,
+            "usedMemResource": 180
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 40,
+        "memConsumed": 40,
+        "providedCpuResource": 40,
+        "providedMemResource": 40
+    },
+    {
+        "vnfId": 30,
+        "vnfType": "LB",
+        "sfcList": [
+            {
+                "sfcId": 11,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 14,
+                "requiredVNF": [
+                    "NAT",
+                    "LB",
+                    "DPI"
+                ]
+            },
+            {
+                "sfcId": 20,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 17,
+                "requiredVNF": [
+                    "NAT",
+                    "LB",
+                    "VPN"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 11,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 190,
+            "usedMemResource": 190
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 70,
+        "memConsumed": 70,
+        "providedCpuResource": 70,
+        "providedMemResource": 70
+    },
+    {
+        "vnfId": 6,
+        "vnfType": "VPN",
+        "sfcList": [
+            {
+                "sfcId": 2,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 3,
+                "requiredVNF": [
+                    "NAT",
+                    "IDS",
+                    "VPN"
+                ]
+            },
+            {
+                "sfcId": 14,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 14,
+                "requiredVNF": [
+                    "Encryption",
+                    "Proxy",
+                    "VPN"
+                ]
+            },
+            {
+                "sfcId": 20,
+                "maxDelay": 150,
+                "flowRate": 10,
+                "accessNodeId": 17,
+                "requiredVNF": [
+                    "NAT",
+                    "LB",
+                    "VPN"
+                ]
+            }
+        ],
+        "node": {
+            "nodeId": 12,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 180,
+            "usedMemResource": 180
+        },
+        "defaultCpuConsumption": 10,
+        "defaultMemConsumption": 10,
+        "cpuConsumed": 100,
+        "memConsumed": 100,
+        "providedCpuResource": 100,
+        "providedMemResource": 100
+    }
+]

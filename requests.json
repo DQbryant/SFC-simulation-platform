@@ -1,0 +1,222 @@
+[
+    {
+        "sfcId": 1,
+        "maxDelay": 150,
+        "flowRate": 10,
+        "accessNodeId": 3,
+        "requiredVNF": [
+            "Encryption",
+            "Proxy",
+            "DPI"
+        ]
+    },
+    {
+        "sfcId": 2,
+        "maxDelay": 150,
+        "flowRate": 10,
+        "accessNodeId": 3,
+        "requiredVNF": [
+            "NAT",
+            "IDS",
+            "VPN"
+        ]
+    },
+    {
+        "sfcId": 3,
+        "maxDelay": 150,
+        "flowRate": 10,
+        "accessNodeId": 3,
+        "requiredVNF": [
+            "Gateway",
+            "FW",
+            "NAT"
+        ]
+    },
+    {
+        "sfcId": 4,
+        "maxDelay": 150,
+        "flowRate": 10,
+        "accessNodeId": 3,
+        "requiredVNF": [
+            "DPI",
+            "LB",
+            "IDS"
+        ]
+    },
+    {
+        "sfcId": 5,
+        "maxDelay": 150,
+        "flowRate": 10,
+        "accessNodeId": 3,
+        "requiredVNF": [
+            "IDS",
+            "Proxy",
+            "VPN"
+        ]
+    },
+    {
+        "sfcId": 6,
+        "maxDelay": 150,
+        "flowRate": 10,
+        "accessNodeId": 8,
+        "requiredVNF": [
+            "NAT",
+            "Gateway",
+            "DPI"
+        ]
+    },
+    {
+        "sfcId": 7,
+        "maxDelay": 150,
+        "flowRate": 10,
+        "accessNodeId": 8,
+        "requiredVNF": [
+            "FW",
+            "LB",
+            "Proxy"
+        ]
+    },
+    {
+        "sfcId": 8,
+        "maxDelay": 150,
+        "flowRate": 10,
+        "accessNodeId": 8,
+        "requiredVNF": [
+            "VPN",
+            "Encryption",
+            "IDS"
+        ]
+    },
+    {
+        "sfcId": 9,
+        "maxDelay": 150,
+        "flowRate": 10,
+        "accessNodeId": 8,
+        "requiredVNF": [
+            "Proxy",
+            "LB",
+            "NAT"
+        ]
+    },
+    {
+        "sfcId": 10,
+        "maxDelay": 150,
+        "flowRate": 10,
+        "accessNodeId": 8,
+        "requiredVNF": [
+            "IDS",
+            "Gateway",
+            "Encryption"
+        ]
+    },
+    {
+        "sfcId": 11,
+        "maxDelay": 150,
+        "flowRate": 10,
+        "accessNodeId": 14,
+        "requiredVNF": [
+            "NAT",
+            "LB",
+            "DPI"
+        ]
+    },
+    {
+        "sfcId": 12,
+        "maxDelay": 150,
+        "flowRate": 10,
+        "accessNodeId": 14,
+        "requiredVNF": [
+            "FW",
+            "IDS",
+            "Gateway"
+        ]
+    },
+    {
+        "sfcId": 13,
+        "maxDelay": 150,
+        "flowRate": 10,
+        "accessNodeId": 14,
+        "requiredVNF": [
+            "DPI",
+            "Proxy",
+            "NAT"
+        ]
+    },
+    {
+        "sfcId": 14,
+        "maxDelay": 150,
+        "flowRate": 10,
+        "accessNodeId": 14,
+        "requiredVNF": [
+            "Encryption",
+            "Proxy",
+            "VPN"
+        ]
+    },
+    {
+        "sfcId": 15,
+        "maxDelay": 150,
+        "flowRate": 10,
+        "accessNodeId": 14,
+        "requiredVNF": [
+            "Proxy",
+            "Gateway",
+            "VPN"
+        ]
+    },
+    {
+        "sfcId": 16,
+        "maxDelay": 150,
+        "flowRate": 10,
+        "accessNodeId": 17,
+        "requiredVNF": [
+            "Gateway",
+            "Encryption",
+            "IDS"
+        ]
+    },
+    {
+        "sfcId": 17,
+        "maxDelay": 150,
+        "flowRate": 10,
+        "accessNodeId": 17,
+        "requiredVNF": [
+            "VPN",
+            "Gateway",
+            "LB"
+        ]
+    },
+    {
+        "sfcId": 18,
+        "maxDelay": 150,
+        "flowRate": 10,
+        "accessNodeId": 17,
+        "requiredVNF": [
+            "DPI",
+            "LB",
+            "Encryption"
+        ]
+    },
+    {
+        "sfcId": 19,
+        "maxDelay": 150,
+        "flowRate": 10,
+        "accessNodeId": 17,
+        "requiredVNF": [
+            "FW",
+            "IDS",
+            "Proxy"
+        ]
+    },
+    {
+        "sfcId": 20,
+        "maxDelay": 150,
+        "flowRate": 10,
+        "accessNodeId": 17,
+        "requiredVNF": [
+            "NAT",
+            "LB",
+            "VPN"
+        ]
+    }
+]

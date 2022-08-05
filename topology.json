@@ -1,0 +1,965 @@
+{
+    "nodes": [
+        {
+            "nodeId": 1,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 0,
+            "usedMemResource": 0,
+            "vnfList": [
+            ],
+            "isP4Node": false
+        },
+        {
+            "nodeId": 2,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 0,
+            "usedMemResource": 0,
+            "vnfList": [
+            ],
+            "isP4Node": false
+        },
+        {
+            "nodeId": 3,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 0,
+            "usedMemResource": 0,
+            "vnfList": [
+            ],
+            "isP4Node": false
+        },
+        {
+            "nodeId": 4,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 0,
+            "usedMemResource": 0,
+            "vnfList": [
+            ],
+            "isP4Node": false
+        },
+        {
+            "nodeId": 5,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 0,
+            "usedMemResource": 0,
+            "vnfList": [
+            ],
+            "isP4Node": false
+        },
+        {
+            "nodeId": 6,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 0,
+            "usedMemResource": 0,
+            "vnfList": [
+            ],
+            "isP4Node": false
+        },
+        {
+            "nodeId": 7,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 0,
+            "usedMemResource": 0,
+            "vnfList": [
+            ],
+            "isP4Node": false
+        },
+        {
+            "nodeId": 8,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 0,
+            "usedMemResource": 0,
+            "vnfList": [
+            ],
+            "isP4Node": false
+        },
+        {
+            "nodeId": 9,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 0,
+            "usedMemResource": 0,
+            "vnfList": [
+            ],
+            "isP4Node": false
+        },
+        {
+            "nodeId": 10,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 0,
+            "usedMemResource": 0,
+            "vnfList": [
+            ],
+            "isP4Node": false
+        },
+        {
+            "nodeId": 11,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 0,
+            "usedMemResource": 0,
+            "vnfList": [
+            ],
+            "isP4Node": false
+        },
+        {
+            "nodeId": 12,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 0,
+            "usedMemResource": 0,
+            "vnfList": [
+            ],
+            "isP4Node": false
+        },
+        {
+            "nodeId": 13,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 0,
+            "usedMemResource": 0,
+            "vnfList": [
+            ],
+            "isP4Node": false
+        },
+        {
+            "nodeId": 14,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 0,
+            "usedMemResource": 0,
+            "vnfList": [
+            ],
+            "isP4Node": false
+        },
+        {
+            "nodeId": 15,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 0,
+            "usedMemResource": 0,
+            "vnfList": [
+            ],
+            "isP4Node": false
+        },
+        {
+            "nodeId": 16,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 0,
+            "usedMemResource": 0,
+            "vnfList": [
+            ],
+            "isP4Node": false
+        },
+        {
+            "nodeId": 17,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 0,
+            "usedMemResource": 0,
+            "vnfList": [
+            ],
+            "isP4Node": false
+        },
+        {
+            "nodeId": 18,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 0,
+            "usedMemResource": 0,
+            "vnfList": [
+            ],
+            "isP4Node": false
+        },
+        {
+            "nodeId": 19,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 0,
+            "usedMemResource": 0,
+            "vnfList": [
+            ],
+            "isP4Node": false
+        },
+        {
+            "nodeId": 20,
+            "cpuResource": 200,
+            "memResource": 200,
+            "usedCpuResource": 0,
+            "usedMemResource": 0,
+            "vnfList": [
+            ],
+            "isP4Node": false
+        }
+    ],
+    "links": [
+        {
+            "linkId": 1,
+            "bandwidth": 1000,
+            "node1": {
+                "nodeId": 2,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "node2": {
+                "nodeId": 3,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "delay": 10,
+            "usedbandwidth": 0,
+            "virtualLinks": [
+            ]
+        },
+        {
+            "linkId": 2,
+            "bandwidth": 1000,
+            "node1": {
+                "nodeId": 2,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "node2": {
+                "nodeId": 6,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "delay": 10,
+            "usedbandwidth": 0,
+            "virtualLinks": [
+            ]
+        },
+        {
+            "linkId": 3,
+            "bandwidth": 1000,
+            "node1": {
+                "nodeId": 6,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "node2": {
+                "nodeId": 7,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "delay": 10,
+            "usedbandwidth": 0,
+            "virtualLinks": [
+            ]
+        },
+        {
+            "linkId": 4,
+            "bandwidth": 1000,
+            "node1": {
+                "nodeId": 7,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "node2": {
+                "nodeId": 8,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "delay": 10,
+            "usedbandwidth": 0,
+            "virtualLinks": [
+            ]
+        },
+        {
+            "linkId": 5,
+            "bandwidth": 1000,
+            "node1": {
+                "nodeId": 3,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "node2": {
+                "nodeId": 4,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "delay": 10,
+            "usedbandwidth": 0,
+            "virtualLinks": [
+            ]
+        },
+        {
+            "linkId": 6,
+            "bandwidth": 1000,
+            "node1": {
+                "nodeId": 1,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "node2": {
+                "nodeId": 2,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "delay": 10,
+            "usedbandwidth": 0,
+            "virtualLinks": [
+            ]
+        },
+        {
+            "linkId": 7,
+            "bandwidth": 1000,
+            "node1": {
+                "nodeId": 1,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "node2": {
+                "nodeId": 7,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "delay": 10,
+            "usedbandwidth": 0,
+            "virtualLinks": [
+            ]
+        },
+        {
+            "linkId": 8,
+            "bandwidth": 1000,
+            "node1": {
+                "nodeId": 8,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "node2": {
+                "nodeId": 9,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "delay": 10,
+            "usedbandwidth": 0,
+            "virtualLinks": [
+            ]
+        },
+        {
+            "linkId": 9,
+            "bandwidth": 1000,
+            "node1": {
+                "nodeId": 1,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "node2": {
+                "nodeId": 5,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "delay": 10,
+            "usedbandwidth": 0,
+            "virtualLinks": [
+            ]
+        },
+        {
+            "linkId": 10,
+            "bandwidth": 1000,
+            "node1": {
+                "nodeId": 4,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "node2": {
+                "nodeId": 5,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "delay": 10,
+            "usedbandwidth": 0,
+            "virtualLinks": [
+            ]
+        },
+        {
+            "linkId": 11,
+            "bandwidth": 1000,
+            "node1": {
+                "nodeId": 5,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "node2": {
+                "nodeId": 10,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "delay": 10,
+            "usedbandwidth": 0,
+            "virtualLinks": [
+            ]
+        },
+        {
+            "linkId": 12,
+            "bandwidth": 1000,
+            "node1": {
+                "nodeId": 9,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "node2": {
+                "nodeId": 10,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "delay": 10,
+            "usedbandwidth": 0,
+            "virtualLinks": [
+            ]
+        },
+        {
+            "linkId": 13,
+            "bandwidth": 1000,
+            "node1": {
+                "nodeId": 5,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "node2": {
+                "nodeId": 11,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "delay": 10,
+            "usedbandwidth": 0,
+            "virtualLinks": [
+            ]
+        },
+        {
+            "linkId": 14,
+            "bandwidth": 1000,
+            "node1": {
+                "nodeId": 10,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "node2": {
+                "nodeId": 12,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "delay": 10,
+            "usedbandwidth": 0,
+            "virtualLinks": [
+            ]
+        },
+        {
+            "linkId": 15,
+            "bandwidth": 1000,
+            "node1": {
+                "nodeId": 9,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "node2": {
+                "nodeId": 13,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "delay": 10,
+            "usedbandwidth": 0,
+            "virtualLinks": [
+            ]
+        },
+        {
+            "linkId": 16,
+            "bandwidth": 1000,
+            "node1": {
+                "nodeId": 11,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "node2": {
+                "nodeId": 12,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "delay": 10,
+            "usedbandwidth": 0,
+            "virtualLinks": [
+            ]
+        },
+        {
+            "linkId": 17,
+            "bandwidth": 1000,
+            "node1": {
+                "nodeId": 11,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "node2": {
+                "nodeId": 14,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "delay": 10,
+            "usedbandwidth": 0,
+            "virtualLinks": [
+            ]
+        },
+        {
+            "linkId": 18,
+            "bandwidth": 1000,
+            "node1": {
+                "nodeId": 12,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "node2": {
+                "nodeId": 15,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "delay": 10,
+            "usedbandwidth": 0,
+            "virtualLinks": [
+            ]
+        },
+        {
+            "linkId": 19,
+            "bandwidth": 1000,
+            "node1": {
+                "nodeId": 13,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "node2": {
+                "nodeId": 15,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "delay": 10,
+            "usedbandwidth": 0,
+            "virtualLinks": [
+            ]
+        },
+        {
+            "linkId": 20,
+            "bandwidth": 1000,
+            "node1": {
+                "nodeId": 14,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "node2": {
+                "nodeId": 15,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "delay": 10,
+            "usedbandwidth": 0,
+            "virtualLinks": [
+            ]
+        },
+        {
+            "linkId": 21,
+            "bandwidth": 1000,
+            "node1": {
+                "nodeId": 14,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "node2": {
+                "nodeId": 18,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "delay": 10,
+            "usedbandwidth": 0,
+            "virtualLinks": [
+            ]
+        },
+        {
+            "linkId": 22,
+            "bandwidth": 1000,
+            "node1": {
+                "nodeId": 15,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "node2": {
+                "nodeId": 17,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "delay": 10,
+            "usedbandwidth": 0,
+            "virtualLinks": [
+            ]
+        },
+        {
+            "linkId": 23,
+            "bandwidth": 1000,
+            "node1": {
+                "nodeId": 18,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "node2": {
+                "nodeId": 19,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "delay": 10,
+            "usedbandwidth": 0,
+            "virtualLinks": [
+            ]
+        },
+        {
+            "linkId": 24,
+            "bandwidth": 1000,
+            "node1": {
+                "nodeId": 18,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "node2": {
+                "nodeId": 16,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "delay": 10,
+            "usedbandwidth": 0,
+            "virtualLinks": [
+            ]
+        },
+        {
+            "linkId": 25,
+            "bandwidth": 1000,
+            "node1": {
+                "nodeId": 16,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "node2": {
+                "nodeId": 17,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "delay": 10,
+            "usedbandwidth": 0,
+            "virtualLinks": [
+            ]
+        },
+        {
+            "linkId": 26,
+            "bandwidth": 1000,
+            "node1": {
+                "nodeId": 19,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "node2": {
+                "nodeId": 20,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "delay": 10,
+            "usedbandwidth": 0,
+            "virtualLinks": [
+            ]
+        },
+        {
+            "linkId": 27,
+            "bandwidth": 1000,
+            "node1": {
+                "nodeId": 17,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "node2": {
+                "nodeId": 20,
+                "cpuResource": 200,
+                "memResource": 200,
+                "usedCpuResource": 0,
+                "usedMemResource": 0,
+                "vnfList": [
+                ],
+                "isP4Node": false
+            },
+            "delay": 10,
+            "usedbandwidth": 0,
+            "virtualLinks": [
+            ]
+        }
+    ],
+    "vnfs": [
+    ],
+    "index": 0
+}
